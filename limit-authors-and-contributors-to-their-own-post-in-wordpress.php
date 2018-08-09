@@ -3,7 +3,8 @@
 
 //Source : https://stacktips.com/tutorials/wordpress/limit-authors-and-contributors-to-their-own-post-in-wordpress
 
-if (current_user_can('contributor') || current_user_can('author')){ //can change with 'contributor'/'editor'
+
+if (current_user_can('contributor') || current_user_can('author')){ //Can change with 'contributor'/'editor'
 	add_filter('parse_query', 'filter_my_own_posts_query' );
 }
 
